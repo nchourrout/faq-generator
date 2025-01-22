@@ -1,4 +1,4 @@
-import FAQForm from "./_components/FAQForm";
+import FAQForm from "@/components/FAQForm";
 
 export default function Page() {
   return (

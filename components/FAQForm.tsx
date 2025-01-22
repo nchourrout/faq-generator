@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { generateFAQ } from "../actions/generateFAQ";
+import { generateFAQ } from "../app/actions/generateFAQ";
 import { LoaderButton } from "@/components/ui/LoaderButton";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
