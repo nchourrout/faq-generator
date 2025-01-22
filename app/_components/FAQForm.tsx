@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { generateFAQ } from "../actions/generateFAQ"; // Import our server action
-import { LoaderButton } from "@/components/ui/LoaderButton"; // Import LoaderButton
+import { generateFAQ } from "../actions/generateFAQ";
+import { LoaderButton } from "@/components/ui/LoaderButton";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
@@ -73,11 +73,11 @@ export default function FAQForm() {
 
     setLoading(true);
     setError("");
-    setFaqs(null); // Reset faqs to null
+    setFaqs(null);
 
     try {
       const data = await generateFAQ(url);
-      console.log("Data received from generateFAQ:", data); // Log the data received
+      console.log("Data received from generateFAQ:", data);
       if (Array.isArray(data)) {
         setFaqs(data);
       } else {
@@ -105,7 +105,7 @@ export default function FAQForm() {
           />
         </div>
         <LoaderButton type="submit" isLoading={loading} className="w-full">
-          Generate FAQ
+          Generate FAQs
         </LoaderButton>
       </form>
 
@@ -124,7 +124,7 @@ export default function FAQForm() {
           ))}
 
           {/* Download Buttons */}
-          <div className="flex gap-4 pt-2">
+          <div className="flex gap-4 pt-2 pb-8">
             <LoaderButton
               variant="outline"
               onClick={() =>

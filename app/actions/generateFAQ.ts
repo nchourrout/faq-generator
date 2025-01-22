@@ -35,8 +35,6 @@ export async function generateFAQ(url: string) {
     schema: faqSchema,
   });
 
-  console.log("Firecrawl Result:", result); // Log the entire result object
-
   if (!result.success) {
     throw new Error(result.error || "Firecrawl extraction failed.");
   }
