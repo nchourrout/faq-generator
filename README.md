@@ -1,6 +1,6 @@
 # Website FAQ Generator
 
-Web app that can generate the FAQ section for any website using [Firecrawl](https://firecrawl.dev) `/extract` endpoint.
+Generates the FAQs for any website using [Firecrawl](https://firecrawl.dev) `/extract` endpoint.
 
 ![Demo](./demo.gif)
 
