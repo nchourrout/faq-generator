@@ -9,7 +9,7 @@ Generates the FAQs for any website using [Firecrawl](https://firecrawl.dev) `/ex
 
 ```bash
 npm install
-cp .env.example .env
+cp .env .env.example 
 sudo nano .env # Add your Firecrawl API key
 npm run dev
 ```
